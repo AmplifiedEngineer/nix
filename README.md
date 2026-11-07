@@ -1,16 +1,16 @@
 # nix
 
-Nix flake for the [pragmatic-engineer/playbook](https://github.com/pragmatic-engineer/playbook) toolkit.
+Nix flake for the [amplifiedengineer/playbook](https://github.com/amplifiedengineer/playbook) toolkit.
 
 | Output | Run | What it is |
 |---|---|---|
-| `playbook` | `nix run github:pragmatic-engineer/nix#playbook` | The Claude Code plugin toolkit and its binary. |
-| `pbtop` | `nix run github:pragmatic-engineer/nix#pbtop` | The token and cost dashboard. |
+| `playbook` | `nix run github:amplifiedengineer/nix#playbook` | The Claude Code plugin toolkit and its binary. |
+| `pbtop` | `nix run github:amplifiedengineer/nix#pbtop` | The token and cost dashboard. |
 
 ## Install
 
 ```bash
-nix profile install github:pragmatic-engineer/nix#playbook
+nix profile install github:amplifiedengineer/nix#playbook
 ```
 
 Upgrade with `nix profile upgrade playbook`. You do not need `pbtop` if you have `playbook`, because `playbook usage` runs the same code.
@@ -25,9 +25,9 @@ A Nix install is read-only. The automatic update shows a notice that the install
 
 ## Versions
 
-A release of `pragmatic-engineer/playbook` opens a pull request here that moves the `releases` block of `flake.nix` to the new version and hashes. Do not edit that block by hand.
+A release of `amplifiedengineer/playbook` opens a pull request here that moves the `releases` block of `flake.nix` to the new version and hashes. Do not edit that block by hand.
 
-`main` is one release behind for a short while after each release. To pin a version, use the merge commit of the `chore(release): nix flake X.Y.Z` pull request, for example `github:pragmatic-engineer/nix/<commit>#playbook`. To roll back, pin the commit of the earlier pull request. The older hashes stay valid because release assets do not change.
+`main` is one release behind for a short while after each release. To pin a version, use the merge commit of the `chore(release): nix flake X.Y.Z` pull request, for example `github:amplifiedengineer/nix/<commit>#playbook`. To roll back, pin the commit of the earlier pull request. The older hashes stay valid because release assets do not change.
 
 ## Security
 

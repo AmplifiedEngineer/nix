@@ -3,11 +3,11 @@
 #
 # The playbook binary from the GitHub release, checked against a fixed hash.
 #
-#   nix run github:pragmatic-engineer/nix#playbook -- --version
-#   nix run github:pragmatic-engineer/nix#pbtop
-#   nix profile install github:pragmatic-engineer/nix#playbook
+#   nix run github:amplifiedengineer/nix#playbook -- --version
+#   nix run github:amplifiedengineer/nix#pbtop
+#   nix profile install github:amplifiedengineer/nix#playbook
 #
-# The release workflow of pragmatic-engineer/playbook rewrites the releases
+# The release workflow of amplifiedengineer/playbook rewrites the releases
 # block below after each release (scripts/render-flake.sh in that repository)
 # and opens a pull request here for it. Nothing else in this file is touched
 # by it.
@@ -47,7 +47,7 @@
           inherit (releases) version;
 
           src = pkgs.fetchurl {
-            url = "https://github.com/pragmatic-engineer/playbook/releases/download/v${releases.version}/playbook-${releases.version}-${targets.${system}}";
+            url = "https://github.com/amplifiedengineer/playbook/releases/download/v${releases.version}/playbook-${releases.version}-${targets.${system}}";
             hash = releases.${system};
           };
 
@@ -69,7 +69,7 @@
             description = if name == "pbtop"
               then "Token and cost dashboard for Claude Code"
               else "An engineering playbook for Claude Code";
-            homepage = "https://github.com/pragmatic-engineer/playbook";
+            homepage = "https://github.com/amplifiedengineer/playbook";
             license = nixpkgs.lib.licenses.asl20;
             mainProgram = name;
             platforms = systems;
