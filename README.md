@@ -1,5 +1,7 @@
 # nix
 
+> **Renamed.** The GitHub organization was `pragmatic-engineer`. It is now `amplifiedengineer`, so the flake is `github:amplifiedengineer/nix`. If you installed from the old address, remove the old entry and install again: run `nix profile remove playbook`, then `nix profile install github:amplifiedengineer/nix#playbook`. If the name does not match, find the entry with `nix profile list`. Your data stays in `~/.config/playbook`.
+
 Nix flake for the [amplifiedengineer/playbook](https://github.com/amplifiedengineer/playbook) toolkit.
 
 | Output | Run | What it is |
