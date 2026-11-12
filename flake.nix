@@ -20,11 +20,11 @@
     let
       # The version and the SRI hash of the release binary of each system.
       releases = {
-        version = "0.42.0";
-        x86_64-linux = "sha256-SeAjyriA4568u9JU8PaQKhaCOmuYcGESFI7IA/gvENU=";
-        aarch64-linux = "sha256-zvWllR+eFO/Eqqm262uwWPTQSTTZGcLsEweh4KS6ytQ=";
-        x86_64-darwin = "sha256-c7Jyu/QakYRkXDGVZvqNCEGfpfS9AnQzXyIYwkK6EKY=";
-        aarch64-darwin = "sha256-YA4545jj2nMq0zahegolPF17U4dvZ52yEs/WoagWMOc=";
+        version = "0.43.0";
+        x86_64-linux = "sha256-v2BYa3yzDEFXM+urHKalDP0d+lxZxOB4gvxAo70u9Hs=";
+        aarch64-linux = "sha256-o28US7RJLn9AiPaGtxCSP7IKl/KvG9ucEQqa31pfvNA=";
+        x86_64-darwin = "sha256-rjLJKKC1k7w9cah5AuoVjzSaUb13SIZqFo4RVirSfy4=";
+        aarch64-darwin = "sha256-Vew9AyYHCWEwcG0LHnOs8MAmF2v4NiKkbH17mbj1an4=";
       };
 
       # The release target of each Nix system. Linux is static musl.
